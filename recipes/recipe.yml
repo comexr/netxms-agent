@@ -20,6 +20,7 @@ modules:
       - https://packages.netxms.org/fedora/netxms.repo
     install:
       - netxms-agent
+      - net-snmp
 
   - type: systemd
     system:
