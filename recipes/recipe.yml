@@ -19,12 +19,11 @@ modules:
     repos:
       - https://packages.netxms.org/fedora/netxms.repo
     install:
-      - netxms-agent
       - net-snmp
 
   - type: systemd
     system:
       enabled:
-        - netxms-agent
+        - snmpd
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
